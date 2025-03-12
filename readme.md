@@ -13,15 +13,24 @@ Research Agent is a project aimed at automating and enhancing the research proce
 To install the Research Agent, follow these steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/research-agent.git
+    git clone https://github.com/Princccee/Research_agent.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd research-agent
+    cd Research_agent
     ```
-3. Install the required dependencies:
+3. Create a venv:
     ```bash
-    npm install
+    python -m venv .venv
+    source .venv/bin/activate
+    ```    
+4. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+5. Start the server:
+    ```bash
+    python manage.py runserver
     ```
 
 ## Usage
