@@ -32,18 +32,3 @@ To install the Research Agent, follow these steps:
     ```bash
     python manage.py runserver
     ```
-
-## Usage
-To start the Research Agent, run:
-```bash
-npm start
-```
-
-## Contributing
-We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Contact
-For any inquiries or support, please contact [your-email@example.com](mailto:your-email@example.com).

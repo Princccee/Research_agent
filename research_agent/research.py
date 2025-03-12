@@ -159,7 +159,7 @@ def generate_markdown_file(query, summary):
 # Define the research_industry_with_summary function
 def research_industry_with_summary(company_name):
     raw_data = research_industry(company_name)
-    print(f"Raw data from internet: \n {raw_data}")
+    # print(f"Raw data from internet: \n {raw_data}")
 
     combined_trends = " ".join(raw_data["industry_trends"])
     all_summaries = []
