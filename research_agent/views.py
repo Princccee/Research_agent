@@ -7,6 +7,7 @@ import logging
 from django.http import JsonResponse
 from .research import *
 from .usecase import *
+from .resource import *
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +20,7 @@ def research(request):
     # print(f"Raw data from internet: \n {raw_data}")
 
     combined_trends = " ".join(raw_data["industry_trends"])
-    all_summaries = []
+    all_summaries = []  
 
     # Process company info
     company_info_chunks = chunk_text(raw_data["company_info"])
@@ -63,6 +64,10 @@ def main(request):
     # Step 1 : AI/Ml use cases generation
     use_cases = generate_use_cases(company_name, research_insights)
     print(f"Use cases: {use_cases}")
+
+    # Step 3: Resources for each use-cases:
+    for use_case in use_cases:
+        resource_asset_agent(use_case)
 
     return Response(
         {
