@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 import logging
 from django.http import JsonResponse
+from .research_main import *
 from .research import *
 from .usecase import *
 from .resource import *
@@ -58,22 +59,23 @@ def main(request):
     print(f"Conducting market research: {company_name}")
     
     # Step 1 : Market research
-    research_insights = research_industry_with_summary(company_name)
-    print(f"Research insights: {research_insights}")
+    research_results = get_summarized_info(company_name)
+    # research_insights = research_industry_with_summary(company_name)
+    print(f"Research insights: {research_results}")
     
-    # Step 1 : AI/Ml use cases generation
-    use_cases = generate_use_cases(company_name, research_insights)
-    print(f"Use cases: {use_cases}")
+    # # Step 1 : AI/Ml use cases generation
+    # use_cases = generate_use_cases(company_name,research_results )
+    # print(f"Use cases: {use_cases}")
 
-    # Step 3: Resources for each use-cases:
-    for use_case in use_cases:
-        resource_asset_agent(use_case)
+    # # Step 3: Resources for each use-cases:
+    # for use_case in use_cases:
+    #     resource_asset_agent(use_case)
 
     return Response(
         {
             "message": f"Successfully completed the research for {company_name}",
-            "Overview": f"{research_insights}",
-            "Usecases": f"{use_cases}",
+            "Overview": f"{research_results}",
+            # "Usecases": f"{use_cases}",
         },
         status=status.HTTP_200_OK
     )

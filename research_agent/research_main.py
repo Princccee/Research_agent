@@ -1,6 +1,7 @@
 import os
 import re
 import requests
+from .format_result import *
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from google import genai
@@ -55,7 +56,7 @@ def extract_text_from_url(url):
 def generate_company_overview(scraped_info):
     """Generates a company overview using Google Gemini."""
     prompt = (
-        "Provide a concise and well-structured summary of the following company details. "
+        "Provide a 200 words concise and well-structured summary of the following company details. "
         "Ensure key information is retained while removing redundancy and unnecessary details. "
         "Focus on the company's core business, major milestones, and recent developments:\n\n"
         f"{scraped_info}"
@@ -69,33 +70,8 @@ def generate_company_overview(scraped_info):
     )
 
     return response.text   
-    
-def remove_duplicates(text):
-    """Remove duplicate paragraphs by normalizing spaces and removing repeats."""
-    paragraphs = list(dict.fromkeys(re.sub(r'\s+', ' ', text).split(". ")))  # Normalize spaces & split sentences
-    return ". ".join(paragraphs)
 
 
-def truncate_text(text, limit=3000):
-    """Truncate text at the nearest sentence boundary before the limit."""
-    if len(text) <= limit:
-        return text
-    # Find the last period (.) before limit and cut there
-    last_sentence_end = text[:limit].rfind(". ")
-    return text[:last_sentence_end+1] if last_sentence_end != -1 else text[:limit]
-
-def clean_text(text):
-    """Remove citation numbers like [4], [5]"""
-    return re.sub(r"\[\d+\]", "", text)
-
-def clean_irrelevant_content(text):
-    """Remove irrelevant sections like newsletter & policy text."""
-    stop_phrases = ["Newsletter", "Privacy Policy", "Terms of Service", "Sign In", "Founder first", "Start your day"]
-    for phrase in stop_phrases:
-        text = text.split(phrase)[0]  
-    return text.strip()
-
-# Driver function
 def get_company_info(company_name):
     """Search, scrape, and summarize company info"""
     search_results = search_google(company_name + " company profile")
@@ -106,10 +82,16 @@ def get_company_info(company_name):
     
     return combined_text 
 
-# Example usage
-query = input("Enter a company/industry name: ")
-info = get_company_info(query)
-overview = generate_company_overview(info)
-# print(f"Info: {info}")
-print(f"Summarised info: {info}")
-# print(f"\nExtracted Info:\n{info[:1000]}...")  # Display first 1000 chars
+# Driver function
+def get_summarized_info(comapny):
+    """Get the summarised info"""
+    info = get_company_info(comapny)
+    return generate_company_overview(info)
+
+# # Example usage
+# query = input("Enter a company/industry name: ")
+# info = get_company_info(query)
+# overview = generate_company_overview(info)
+# # print(f"Info: {info}")
+# print(f"Summarised info: {info}")
+# # print(f"\nExtracted Info:\n{info[:1000]}...")  # Display first 1000 chars
