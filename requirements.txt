@@ -1,4 +1,4 @@
-# django
+django
 openai
 langchain
 transformers
@@ -16,3 +16,4 @@ langchain-community
 langchain-openai
 forefront
 djangorestframework
+google-genai
