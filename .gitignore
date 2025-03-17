@@ -31,3 +31,5 @@ db.sqlite3
 # System files
 .DS_Store
 Thumbs.db
+
+resources.md

@@ -5,8 +5,11 @@ from rest_framework.response import Response
 from rest_framework import status
 import logging
 from django.http import JsonResponse
+from .research_main import *
+from .usecase_main import *
 from .research import *
 from .usecase import *
+from .resource import *
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +22,7 @@ def research(request):
     # print(f"Raw data from internet: \n {raw_data}")
 
     combined_trends = " ".join(raw_data["industry_trends"])
-    all_summaries = []
+    all_summaries = []  
 
     # Process company info
     company_info_chunks = chunk_text(raw_data["company_info"])
@@ -57,17 +60,17 @@ def main(request):
     print(f"Conducting market research: {company_name}")
     
     # Step 1 : Market research
-    research_insights = research_industry_with_summary(company_name)
-    print(f"Research insights: {research_insights}")
+    research_results = get_summarized_info(company_name)
     
-    # Step 1 : AI/Ml use cases generation
-    use_cases = generate_use_cases(company_name, research_insights)
-    print(f"Use cases: {use_cases}")
+    # Step 2 : AI/Ml use cases generation
+    use_cases = generate_ai_usecases(company_name, research_results)
+
+    # use_cases = generate_structured_usecases(company_name, research_results)
 
     return Response(
         {
             "message": f"Successfully completed the research for {company_name}",
-            "Overview": f"{research_insights}",
+            "Overview": f"{research_results}",
             "Usecases": f"{use_cases}",
         },
         status=status.HTTP_200_OK
