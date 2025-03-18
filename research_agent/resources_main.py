@@ -1,83 +1,170 @@
 import os
 import requests
 from dotenv import load_dotenv
+import xml.etree.ElementTree as ET
 import subprocess
 import json
 import feedparser
+import kaggle
 
-# Helper Function: Search HuggingFace for datasets and models
-def search_huggingface(query, search_type="model"):
+GITHUB_TOKEN = os.getenv("GITHUB_API_KEY")
+    
+def fetch_huggingface_models(query, limit=5):
+    """Fetch relevant Hugging Face models based on the input query.
+    
+    Args:
+        query (str): The search query for models.
+        limit (int): The number of models to return (default: 5).
+
+    Returns:
+        list: A list of dictionaries containing model names and their URLs.
     """
-    Search HuggingFace for models
-    """
-    url = f"https://huggingface.co/api/{search_type}s"
-    params = {"search": query}
-    response = requests.get(url, params=params)
-    if response.status_code == 200:
-        items = response.json()
-        return [
-            {"name": item["id"], "url": f"https://huggingface.co/{item['id']}"} for item in items
+    url = f"https://huggingface.co/api/models?search={query}"
+    
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        models = response.json()
+
+        if not models:
+            return [{"message": "No relevant models found"}]
+
+        model_list = [
+            {"name": model["id"], "url": f"https://huggingface.co/{model['id']}"}
+            for model in models[:limit]
         ]
-    else:
-        return []
-
-
-def search_kaggle_datasets(query):
-    """
-    Search Kaggle for datasets related to the query.
-    """
-    kaggle_api_token = os.getenv("KAGGLE_API_KEY")
-    if not kaggle_api_token:
-        raise ValueError("KAGGLE_API_KEY environment variable is not set.")
+        
+        return model_list
     
-    url = f"https://www.kaggle.com/api/v1/datasets/list"
-    headers = {
-        "Authorization": f"Bearer {kaggle_api_token}",
-        "Content-Type": "application/json",
-    }
-    params = {"search": query}
+    except requests.RequestException as e:
+        return [{"error": str(e)}]    
+
     
-    response = requests.get(url, headers=headers, params=params)
-    if response.status_code == 200:
+def fetch_huggingface_datasets(query, limit=5):
+    """Fetch relevant Hugging Face datasets based on the input query.
+    
+    Args:
+        query (str): The search query for datasets.
+        limit (int): The number of datasets to return (default: 5).
+
+    Returns:
+        list: A list of dictionaries containing dataset names and their URLs.
+    """
+    url = f"https://huggingface.co/api/datasets?search={query}"
+    
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
         datasets = response.json()
-        return [
-            {"title": d["title"], "url": f"https://kaggle.com/{d['ref']}"} for d in datasets
+
+        if not datasets:
+            return [{"message": "No relevant datasets found"}]
+
+        dataset_list = [
+            {"name": dataset["id"], "url": f"https://huggingface.co/datasets/{dataset['id']}"}
+            for dataset in datasets[:limit]
         ]
-    else:
-        return []
+        
+        return dataset_list
+    
+    except requests.RequestException as e:
+        return [{"error": str(e)}]
+    
+
+def fetch_kaggle_datasets(query, limit=5):
+    """Fetch relevant Kaggle datasets based on the input query.
+
+    Args:
+        query (str): The search query for datasets.
+        limit (int): The number of datasets to return (default: 5).
+
+    Returns:
+        list: A list of dictionaries containing dataset names and their URLs.
+    """
+    try:
+        datasets = kaggle.api.dataset_list(search=query)
+        
+        if not datasets:
+            return [{"message": "No relevant datasets found"}]
+
+        dataset_list = [
+            {"name": dataset.ref, "url": f"https://www.kaggle.com/datasets/{dataset.ref}"}
+            for dataset in datasets[:limit]
+        ]
+
+        return dataset_list
+    
+    except Exception as e:
+        return [{"error": str(e)}]
+    
 
 def search_arxiv_papers(query):
     """
-    Search arXiv for research papers.
+    Search arXiv for research papers related to the input query.
     """
     url = "http://export.arxiv.org/api/query"
     params = {"search_query": query, "start": 0, "max_results": 5}
-    response = requests.get(url, params=params)
-    if response.status_code == 200:
-        import xml.etree.ElementTree as ET
+
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()  # Raise HTTPError for bad responses (4xx, 5xx)
 
         root = ET.fromstring(response.content)
         papers = []
+
         for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-            title = entry.find("{http://www.w3.org/2005/Atom}title").text
-            link = entry.find("{http://www.w3.org/2005/Atom}id").text
-            papers.append({"title": title.strip(), "url": link.strip()})
-        return papers
-    else:
-        return []
-    
-def search_github_repositories(query):
+            title = entry.findtext("{http://www.w3.org/2005/Atom}title", "").strip()
+            link = entry.findtext("{http://www.w3.org/2005/Atom}id", "").strip()
+            papers.append({"title": title, "url": link})
+
+        return papers if papers else [{"message": "No papers found"}]
+
+    except requests.exceptions.RequestException as e:
+        return [{"error": f"Failed to fetch papers: {e}"}]
+
+
+def fetch_github_repos(query, limit=5, github_token=None):
+    """Fetch relevant GitHub repositories based on the input query.
+
+    Args:
+        query (str): The search query for repositories.
+        limit (int): The number of repositories to return (default: 5).
+        github_token (str, optional): GitHub API token for higher rate limits.
+
+    Returns:
+        list: A list of dictionaries containing repository names and their URLs.
+    """
     url = "https://api.github.com/search/repositories"
-    params = {"q": query, "sort": "stars", "order": "desc"}
-    response = requests.get(url, params=params)
-    if response.status_code == 200:
-        items = response.json()["items"]
-        return [
-            {"name": item["full_name"], "url": item["html_url"], "stars": item["stargazers_count"]}
-                for item in items[:5]
-            ]
-    else:
-        return []    
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    
+    if github_token:
+        headers["Authorization"] = f"token {github_token}"
+    
+    params = {
+        "q": query,
+        "sort": "stars",  # Sort by most stars
+        "order": "desc",
+        "per_page": limit
+    }
+
+    try:
+        response = requests.get(url, headers=headers, params=params)
+        response.raise_for_status()
+        data = response.json()
+        
+        if "items" not in data:
+            return [{"message": "No relevant repositories found"}]
+
+        repo_list = [
+            {"name": repo["full_name"], "url": repo["html_url"]}
+            for repo in data["items"]
+        ]
+
+        return repo_list
+    
+    except requests.exceptions.RequestException as e:
+        return [{"error": str(e)}]
+         
 
 # Main function to process use cases
 def collect_resources_for_usecases(use_cases_json):
@@ -89,18 +176,21 @@ def collect_resources_for_usecases(use_cases_json):
         title = use_case["title"]
         print(f"Collecting resources for: {title}")
 
-        models = search_huggingface(title)
-        datasets = search_kaggle_datasets(title)
-        github_repos = search_github_repositories(title)
-        # papers = search_arxiv_papers(title)
+        # models = search_huggingface(title)
+        models = fetch_huggingface_models(title)
+        hf_datasets = fetch_huggingface_datasets(title)
+        kaggle_datasets = fetch_kaggle_datasets(title)
+        github_repos = fetch_github_repos(title, GITHUB_TOKEN)
+        papers = search_arxiv_papers(title)
 
         resource_collection.append({
             "title": title,
             "resources": {
                 "huggingface_models": models,
-                "kaggle_datasets": datasets,
+                "huggingface_datasets": hf_datasets,
+                "kaggle_datasets": kaggle_datasets,
                 "github_repositories": github_repos,
-                # "research_papers": papers
+                "research_papers": papers
             }
         })
     
@@ -135,3 +225,21 @@ use_cases_json = {
 #     json.dump(resources_json, f, indent=4)
 
 # print("Resources collected successfully!")
+
+# # Example usage
+# query = "image segmentation"
+# models = fetch_huggingface_models(query)
+# for model in models:
+#     print(model)
+
+# # Example usage
+# query = "image segmentation"
+# datasets = fetch_kaggle_datasets(query)
+# for dataset in datasets:
+#     print(dataset)
+
+# # Example usage
+# query = "machine learning"
+# repos = fetch_github_repos(query)
+# for repo in repos:
+#     print(repo)
