@@ -7,6 +7,7 @@ import logging
 from django.http import JsonResponse
 from .research_main import *
 from .usecase_main import *
+from .resources_main import *
 from .research import *
 from .usecase import *
 from .resource import *
@@ -67,13 +68,14 @@ def main(request):
     use_cases = generate_structured_usecases(company_name, research_results)
 
     # Step 3: Generate relevant resources for each usecases
-    
+    resources = collect_resources_for_usecases(use_cases)
 
     return Response(
         {
             "message": f"Successfully completed the research for {company_name}",
             "Overview": research_results,
             "Usecases": use_cases,
+            "Resources": resources
         },
         status=status.HTTP_200_OK
     )
