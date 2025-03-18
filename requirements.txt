@@ -1,20 +1,20 @@
 django
-openai
-langchain
-transformers
-serpapi
+# openai
+# langchain
+# transformers
+# serpapi
 streamlit
-gradio
+# gradio
 requests
 kaggle
-graphviz
-matplotlib
-langchain_community
+# graphviz
+# matplotlib
+# langchain_community
 beautifulsoup4
 python-dotenv
-langchain-community
-langchain-openai
-forefront
+# langchain-community
+# langchain-openai
+# forefront
 djangorestframework
 google-genai
 feedparser
