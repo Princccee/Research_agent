@@ -32,3 +32,11 @@ To install the Research Agent, follow these steps:
     ```bash
     python manage.py runserver
     ```
+6. Build the docker image:
+    ```bash
+    docker-compose build --no-cache
+    ```
+7. Run the docker container:
+    ```bash
+    docker-compose up -d
+    ```

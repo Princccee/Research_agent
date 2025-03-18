@@ -5,10 +5,16 @@ import xml.etree.ElementTree as ET
 import subprocess
 import json
 import feedparser
-import kaggle
+from kaggle.api.kaggle_api_extended import KaggleApi
 
 GITHUB_TOKEN = os.getenv("GITHUB_API_KEY")
-    
+
+os.environ['KAGGLE_USERNAME'] = os.getenv("KAGGLE_USERNAME")
+os.environ['KAGGLE_KEY'] = os.getenv("KAGGLE_KEY")
+
+api = KaggleApi()
+api.authenticate()
+
 def fetch_huggingface_models(query, limit=5):
     """Fetch relevant Hugging Face models based on the input query.
     
@@ -82,7 +88,7 @@ def fetch_kaggle_datasets(query, limit=5):
         list: A list of dictionaries containing dataset names and their URLs.
     """
     try:
-        datasets = kaggle.api.dataset_list(search=query)
+        datasets = api.dataset_list(search=query)
         
         if not datasets:
             return [{"message": "No relevant datasets found"}]
