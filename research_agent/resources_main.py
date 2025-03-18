@@ -81,6 +81,7 @@ def search_github_repositories(query):
 
 # Main function to process use cases
 def collect_resources_for_usecases(use_cases_json):
+    # use_cases = use_cases_json["Usecases"]["use_cases"]
     use_cases = use_cases_json["use_cases"]
     resource_collection = []
 
@@ -91,7 +92,7 @@ def collect_resources_for_usecases(use_cases_json):
         models = search_huggingface(title)
         datasets = search_kaggle_datasets(title)
         github_repos = search_github_repositories(title)
-        papers = search_arxiv_papers(title)
+        # papers = search_arxiv_papers(title)
 
         resource_collection.append({
             "title": title,
@@ -99,7 +100,7 @@ def collect_resources_for_usecases(use_cases_json):
                 "huggingface_models": models,
                 "kaggle_datasets": datasets,
                 "github_repositories": github_repos,
-                "research_papers": papers
+                # "research_papers": papers
             }
         })
     
