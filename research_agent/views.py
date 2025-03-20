@@ -2,6 +2,7 @@ import requests
 import os
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.http import FileResponse
 from rest_framework import status
 import logging
 from django.http import JsonResponse
@@ -38,3 +39,10 @@ def main(request):
         },
         status=status.HTTP_200_OK
     )
+
+@api_view(['GET'])
+def download_pdf(request):
+    file_path = "final_proposal.md"  # Update with actual file path
+    if os.path.exists(file_path):
+        return FileResponse(open(file_path, "rb"), as_attachment=True, filename="Research_Report.pdf")
+    return JsonResponse({"error": "File not found"}, status=404)
