@@ -8,13 +8,7 @@ from reportlab.lib.units import inch
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 
 def create_pdf_from_json(json_string, output_filename=None):
-    """
-    Convert JSON output from research agent into a well-structured PDF
     
-    Parameters:
-    json_string (str): JSON data as a string
-    output_filename (str): Output PDF filename (optional)
-    """
     # Parse JSON data
     try:
         data = json.loads(json_string)
@@ -175,11 +169,7 @@ def create_pdf_from_json(json_string, output_filename=None):
     return output_filename
 
 def main():
-    """
-    Main function to handle user input and generate PDF
-    """
-    print("Convert Research Agent Output to PDF")
-    print("====================================")
+    
     
     # Hardcoded JSON file path
     file_path = "test.json"  # Replace with the actual path to your JSON file
