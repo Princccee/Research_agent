@@ -4,6 +4,7 @@ import requests
 # Django API endpoint
 BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
 
+
 st.set_page_config(page_title="Research Agent", layout="wide")
 
 # UI Layout
