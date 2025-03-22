@@ -3,6 +3,7 @@ import requests
 
 # Django API endpoint
 BACKEND_URL = "http://127.0.0.1:8000/api/main/"
+# BACKEND_URL = "http://localhost:8000/"
 
 st.set_page_config(page_title="Research Agent", layout="wide")
 
@@ -72,8 +73,11 @@ if st.button("Download PDF"):
     response = requests.get(pdf_url)
 
     if response.status_code == 200:
-        with open("Research_Report.pdf", "wb") as f:
-            f.write(response.content)
-        st.success("Download successful! Check your local directory.")
+        st.download_button(
+        label="Download PDF",
+        data=response.content,  # File content
+        file_name="Research_Report.pdf",
+        mime="application/pdf"
+    )
     else:
         st.error("Error downloading the file.")
