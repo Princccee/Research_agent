@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Django API endpoint
-BACKEND_URL = "http://127.0.0.1:8000/api/main/"
+BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
 
 st.set_page_config(page_title="Research Agent", layout="wide")
 
@@ -15,7 +15,7 @@ user_input = st.text_input("Enter your query:", "")
 # Send button
 if st.button("Send"):
     with st.spinner("Processing..."):
-        response = requests.post(BACKEND_URL, json={"query": user_input})
+        response = requests.post(f"{BACKEND_URL}/api/main", json={"query": user_input})
 
         if response.status_code == 200:
             data = response.json()
@@ -68,7 +68,7 @@ if st.button("Send"):
 
 # Download button
 if st.button("Download PDF"):
-    pdf_url = "http://127.0.0.1:8000/api/download_pdf/"
+    pdf_url = f"{BACKEND_URL}/api/download_pdf/"
     response = requests.get(pdf_url)
 
     if response.status_code == 200:

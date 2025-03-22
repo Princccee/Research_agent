@@ -4,5 +4,5 @@ from .views import main, download_pdf
 
 urlpatterns = [
     path('main/', main, name="main"),
-    path("api/download_pdf/", download_pdf, name="download_pdf"),
+    path("download_pdf/", download_pdf, name="download_pdf"),
 ]
