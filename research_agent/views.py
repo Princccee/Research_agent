@@ -9,6 +9,7 @@ from django.http import JsonResponse
 from .research_main import *
 from .usecase_main import *
 from .resources_main import *
+from .pdf_generator import generate_pdf
 
 logger = logging.getLogger(__name__)
 
@@ -30,19 +31,31 @@ def main(request):
     resources = collect_resources_for_usecases(use_cases)
     # print(resources)
 
-    return Response(
-        {
-            "message": f"Successfully completed the research for {company_name}",
-            "Overview": research_results,
-            "Usecases": use_cases,
-            "Resources": resources
-        },
-        status=status.HTTP_200_OK
-    )
+    # Prepare response data
+    response_data = {
+        "message": f"Successfully completed the research for {company_name}",
+        "Overview": research_results,
+        "Usecases": use_cases,
+        "Resources": resources
+    }
+
+     # Save response as result.json in the project root
+    project_root = os.path.dirname(os.path.abspath(__file__))  
+    result_file_path = os.path.join(project_root, "result.json")
+
+    with open(result_file_path, "w", encoding="utf-8") as f:
+        json.dump(response_data, f, indent=4, ensure_ascii=False)
+    
+    return Response(response_data, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 def download_pdf(request):
-    file_path = "final_proposal.md"  # Update with actual file path
+    json_file = "result.json"
+    file_path = "final_proposal.pdf"  
+
+    # Generate the PDF before sending it
+    generate_pdf(json_file, file_path)
+
     if os.path.exists(file_path):
         return FileResponse(open(file_path, "rb"), as_attachment=True, filename="Research_Report.pdf")
     return JsonResponse({"error": "File not found"}, status=404)

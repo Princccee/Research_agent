@@ -183,10 +183,10 @@ def collect_resources_for_usecases(use_cases_json):
         print(f"Collecting resources for: {title}")
 
         # models = search_huggingface(title)
-        models = fetch_huggingface_models(title)
-        hf_datasets = fetch_huggingface_datasets(title)
-        kaggle_datasets = fetch_kaggle_datasets(title)
-        github_repos = fetch_github_repos(title, GITHUB_TOKEN)
+        models = fetch_huggingface_models(title, 5)
+        hf_datasets = fetch_huggingface_datasets(title, 5)
+        kaggle_datasets = fetch_kaggle_datasets(title, 5)
+        github_repos = fetch_github_repos(title, 5, GITHUB_TOKEN)
         papers = search_arxiv_papers(title)
 
         resource_collection.append({
