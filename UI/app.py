@@ -16,7 +16,7 @@ user_input = st.text_input("Enter your query:", "")
 # Send button
 if st.button("Send"):
     with st.spinner("Processing..."):
-        response = requests.post(f"{BACKEND_URL}/api/main", json={"query": user_input})
+        response = requests.post(f"{BACKEND_URL}/api/main/", json={"query": user_input})
 
         if response.status_code == 200:
             data = response.json()
