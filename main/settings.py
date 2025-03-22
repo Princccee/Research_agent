@@ -26,9 +26,9 @@ LOG_FILE_PATH = BASE_DIR / "endpoint.log"
 SECRET_KEY = 'django-insecure-$!412z##2*$r!yfn10ta7_6&&r1v7u_(#^^vni+w=6(ew$6njl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['AI-Research-Agent.onrender.com']
 
 
 # Application definition
