@@ -168,7 +168,7 @@ def create_pdf_from_json(json_string, output_filename=None):
     print(f"PDF created successfully: {output_filename}")
     return output_filename
 
-def main():
+"""def main():
     
     
     # Hardcoded JSON file path
@@ -191,4 +191,4 @@ def main():
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    main()
+    main()"""
