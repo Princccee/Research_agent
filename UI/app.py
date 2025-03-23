@@ -3,7 +3,6 @@ import requests
 
 # Django API endpoint
 BACKEND_URL = "http://127.0.0.1:8000/api/main/"
-# BACKEND_URL = "http://localhost:8000/"
 
 st.set_page_config(page_title="Research Agent", layout="wide")
 
