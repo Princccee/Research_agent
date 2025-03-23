@@ -70,7 +70,7 @@ if st.button("Send"):
 
 # Download button
 if st.button("Download PDF"):
-    pdf_url = f"{BACKEND_URL}api/download_pdf/"
+    pdf_url = f"{BACKEND_URL}/api/download_pdf/"
     response = requests.get(pdf_url)
 
     if response.status_code == 200:

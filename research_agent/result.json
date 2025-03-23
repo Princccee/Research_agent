@@ -1,41 +1,41 @@
 {
     "message": "Successfully completed the research for Ola",
-    "Overview": "Ola Consumer, formerly Ola Cabs, is an Indian transportation company headquartered in Bangalore, primarily known for its ride-hailing services across 250+ Indian cities. Founded in 2011 as a taxi aggregator by Bhavish Aggarwal and Ankit Bhati, Ola transitioned from phone bookings to a mobile app by 2012. The company rapidly expanded, achieving market leadership by 2015 and acquiring rival TaxiForSure. Ola ventured into international markets like Australia, New Zealand, and the UK starting in 2018. However, in April 2024, Ola exited all international operations to refocus on the Indian market. In August 2024, the company rebranded to Ola Consumer, reflecting its diversification into financial services and cloud kitchens alongside its core transportation business.\n",
+    "Overview": "Ola Consumer, headquartered in Bangalore, is an Indian transportation company primarily known for its ride-hailing services. Founded in 2010 as Olatrip.com, it pivoted to on-demand cabs in 2011 as Ola Cabs. Launching its mobile app in 2012, Ola rapidly expanded, acquiring rival TaxiForSure in 2015. The company ventured into international markets in 2018, including Australia, New Zealand, and the UK. However, in 2024, Ola exited these markets to refocus on India. August 2024 saw the company rebrand to Ola Consumer, reflecting its diversification into other business verticals such as financial services and cloud kitchens, alongside its core transportation offerings. It currently operates in over 250 Indian cities.\n",
     "Usecases": {
         "use_cases": [
             {
-                "title": "Predictive Demand Forecasting & Dynamic Pricing",
-                "explanation": "Leverage historical data (time of day, day of week, location, events, weather, etc.) to accurately predict rider demand in specific areas.",
+                "title": "Enhanced Route Optimization and Predictive ETA",
+                "explanation": "Leveraging machine learning to analyze real-time traffic data, historical ride patterns, weather conditions, and even event schedules to optimize routes for drivers. This goes beyond simple shortest-path algorithms.",
                 "practical_application": [
-                    "Optimizes driver availability by incentivizing drivers to be in high-demand areas at peak times, minimizing wait times for customers. This also enables dynamic pricing adjustments based on real-time supply and demand, maximizing revenue while remaining competitive. The AI could incorporate external event data (concerts, festivals) to further refine its predictions."
+                    "Provide drivers with the most efficient routes, dynamically adjusting based on current conditions. Improve the accuracy of Estimated Time of Arrival (ETA) predictions for passengers, increasing satisfaction and reducing perceived wait times. This can also be extended to optimizing delivery routes for cloud kitchen orders."
                 ]
             },
             {
-                "title": "Enhanced Driver Behavior Analysis & Safety Monitoring",
-                "explanation": "Use sensor data from smartphones (GPS, accelerometer, gyroscope) and in-car cameras (if equipped) to analyze driver behavior in real-time.",
+                "title": "Dynamic Pricing and Demand Forecasting",
+                "explanation": "Employing AI models to predict demand surges based on various factors like time of day, location, events, and even social media trends. This allows for dynamic pricing adjustments that balance supply and demand effectively.",
                 "practical_application": [
-                    "Identifies risky driving patterns (speeding, harsh braking, sudden acceleration, fatigue) and provides immediate feedback to drivers through in-app alerts. This significantly improves passenger safety, reduces accidents, and helps Ola enforce its safety policies. The system can also identify and reward safe driving habits, fostering a culture of responsibility."
+                    "Implement intelligent surge pricing that is fair to both drivers and passengers. Forecast demand for specific locations and times, incentivizing drivers to position themselves in high-demand areas. This can also be used to predict demand for cloud kitchen meals based on location and time, optimizing inventory and staffing."
                 ]
             },
             {
-                "title": "Intelligent Route Optimization & Trip Management",
-                "explanation": "Employ machine learning algorithms to find the most efficient and cost-effective routes for drivers, considering real-time traffic conditions, road closures, and estimated travel times.",
+                "title": "Personalized Recommendations and Marketing",
+                "explanation": "Utilizing machine learning algorithms to analyze user behavior, ride history, payment preferences, and food ordering patterns (from cloud kitchens) to provide personalized recommendations for rides, restaurants, and financial services.",
                 "practical_application": [
-                    "Minimizes fuel consumption, reduces trip duration for passengers, and optimizes driver earnings. The system can also dynamically adjust routes based on unexpected events (accidents, traffic jams) to ensure timely arrival. This could be integrated with other services like Ola Financial to offer discounted fuel or vehicle maintenance based on driving efficiency."
+                    "Offer targeted promotions and discounts based on individual user preferences (e.g., discounted rides to frequent destinations, personalized meal suggestions from cloud kitchens). This increases user engagement, boosts revenue, and improves customer loyalty. For financial services, it can be used to offer tailored insurance or lending products."
                 ]
             },
             {
-                "title": "Personalized Customer Experience & Recommendations",
-                "explanation": "Analyze user data (ride history, preferred ride types, payment methods, feedback) to provide personalized recommendations and improve overall customer satisfaction.",
+                "title": "Fraud Detection and Security Enhancement",
+                "explanation": "Implementing AI-powered fraud detection systems to identify and prevent fraudulent activities related to rides, payments, and driver accounts. This includes detecting suspicious patterns in ride requests, payment transactions, and driver behavior.",
                 "practical_application": [
-                    "Suggest preferred ride types based on past behavior (e.g., Ola Auto for short trips, Ola Prime for comfort), offer personalized promotions and discounts, and tailor the app interface based on user preferences. This also helps in targeted marketing efforts to increase customer retention. This can extend to Ola's other business verticals, such as recommending cloud kitchen meals based on user dining history."
+                    "Reduce fraudulent ride requests and payment scams. Detect and flag potentially compromised driver accounts. Improve the security and safety of the Ola platform for both users and drivers, building trust and protecting revenue. This can also be extended to fraud detection within the financial services arm of the company."
                 ]
             },
             {
-                "title": "Fraud Detection & Prevention",
-                "explanation": "Develop machine learning models to identify and prevent fraudulent activities, such as fake accounts, manipulated bookings, and payment fraud.",
+                "title": "Driver Performance Monitoring and Safety Assistance",
+                "explanation": "Using machine learning to monitor driver behavior during rides, including speed, acceleration, braking patterns, and adherence to traffic laws.",
                 "practical_application": [
-                    "Detect suspicious booking patterns, flag unusual payment transactions, and verify user identities to prevent scams and protect both drivers and passengers. This includes detecting fake driver profiles and preventing collusion between drivers to inflate fares. This can also be implemented within Ola Financial to reduce loan defaults and identity theft."
+                    "Provide drivers with real-time feedback and alerts on unsafe driving habits, promoting safer driving practices. Identify and reward top-performing drivers. Analyze accident data to identify high-risk areas and implement preventative measures. This ultimately reduces accidents, improves driver safety, and lowers insurance costs."
                 ]
             }
         ]
@@ -43,7 +43,7 @@
     "Resources": {
         "use_cases_resources": [
             {
-                "title": "Predictive Demand Forecasting & Dynamic Pricing",
+                "title": "Enhanced Route Optimization and Predictive ETA",
                 "resources": {
                     "huggingface_models": [
                         {
@@ -56,6 +56,57 @@
                         }
                     ],
                     "kaggle_datasets": [
+                        {
+                            "message": "No relevant datasets found"
+                        }
+                    ],
+                    "github_repositories": [],
+                    "research_papers": [
+                        {
+                            "title": "DeeprETA: An ETA Post-processing System at Scale",
+                            "url": "http://arxiv.org/abs/2206.02127v1"
+                        },
+                        {
+                            "title": "Exclusive Hadronic D Decays to eta' and eta",
+                            "url": "http://arxiv.org/abs/hep-ph/9806209v2"
+                        },
+                        {
+                            "title": "HappyRouting: Learning Emotion-Aware Route Trajectories for Scalable\n  In-The-Wild Navigation",
+                            "url": "http://arxiv.org/abs/2401.15695v1"
+                        },
+                        {
+                            "title": "To each route its own ETA: A generative modeling framework for ETA\n  prediction",
+                            "url": "http://arxiv.org/abs/1906.09925v1"
+                        },
+                        {
+                            "title": "NeuraLunaDTNet: Feedforward Neural Network-Based Routing Protocol for\n  Delay-Tolerant Lunar Communication Networks",
+                            "url": "http://arxiv.org/abs/2403.20199v2"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Dynamic Pricing and Demand Forecasting",
+                "resources": {
+                    "huggingface_models": [
+                        {
+                            "message": "No relevant models found"
+                        }
+                    ],
+                    "huggingface_datasets": [
+                        {
+                            "message": "No relevant datasets found"
+                        }
+                    ],
+                    "kaggle_datasets": [
+                        {
+                            "name": "anirudhchauhan/retail-store-inventory-forecasting-dataset",
+                            "url": "https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset"
+                        },
+                        {
+                            "name": "bhanupratapbiswas/retail-price-optimization-case-study",
+                            "url": "https://www.kaggle.com/datasets/bhanupratapbiswas/retail-price-optimization-case-study"
+                        },
                         {
                             "name": "arashnic/dynamic-pricing-dataset",
                             "url": "https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset"
@@ -63,35 +114,160 @@
                         {
                             "name": "ziya07/smart-grid-real-time-load-monitoring-dataset",
                             "url": "https://www.kaggle.com/datasets/ziya07/smart-grid-real-time-load-monitoring-dataset"
+                        },
+                        {
+                            "name": "pythonafroz/wind-speed-vs-spanish-power-prices",
+                            "url": "https://www.kaggle.com/datasets/pythonafroz/wind-speed-vs-spanish-power-prices"
                         }
                     ],
-                    "github_repositories": [],
-                    "research_papers": [
+                    "github_repositories": [
                         {
-                            "title": "Elasticity Based Demand Forecasting and Price Optimization for Online\n  Retail",
-                            "url": "http://arxiv.org/abs/2106.08274v2"
+                            "name": "tule2236/Airbnb-Dynamic-Pricing-Optimization",
+                            "url": "https://github.com/tule2236/Airbnb-Dynamic-Pricing-Optimization"
                         },
+                        {
+                            "name": "NancyTicharwa/dynamic-pricing",
+                            "url": "https://github.com/NancyTicharwa/dynamic-pricing"
+                        },
+                        {
+                            "name": "bananamtieu/Dynamic-Pricing-System",
+                            "url": "https://github.com/bananamtieu/Dynamic-Pricing-System"
+                        },
+                        {
+                            "name": "Aakarshnigam/Azure_Hotels-_Pricing_Strategy",
+                            "url": "https://github.com/Aakarshnigam/Azure_Hotels-_Pricing_Strategy"
+                        },
+                        {
+                            "name": "Alex7020/Thermoforming-Plastic-Market-2022-by-Technology-Equipment-Product-Type-Packaging-Material-and-R",
+                            "url": "https://github.com/Alex7020/Thermoforming-Plastic-Market-2022-by-Technology-Equipment-Product-Type-Packaging-Material-and-R"
+                        },
+                        {
+                            "name": "SudarshanPTS/AI-Driven-Demand-Forecasting-and-Dynamic-Pricing",
+                            "url": "https://github.com/SudarshanPTS/AI-Driven-Demand-Forecasting-and-Dynamic-Pricing"
+                        },
+                        {
+                            "name": "AnkurK07/Airline-Booking-Demand-Forecasting-and-Dynamic-Pricing-Optimization",
+                            "url": "https://github.com/AnkurK07/Airline-Booking-Demand-Forecasting-and-Dynamic-Pricing-Optimization"
+                        },
+                        {
+                            "name": "Meghana-polisetty/Dynamic-Pricing-Optimization-and-Demand-Forecasting-on-Airbnb-",
+                            "url": "https://github.com/Meghana-polisetty/Dynamic-Pricing-Optimization-and-Demand-Forecasting-on-Airbnb-"
+                        },
+                        {
+                            "name": "AliHasan-786/Dynamic-Pricing-Strategy",
+                            "url": "https://github.com/AliHasan-786/Dynamic-Pricing-Strategy"
+                        },
+                        {
+                            "name": "IsmailOtukoya/Dynamic-Pricing-For-Shortlets",
+                            "url": "https://github.com/IsmailOtukoya/Dynamic-Pricing-For-Shortlets"
+                        },
+                        {
+                            "name": "rprkash10/Dynamic-Price-Predictor",
+                            "url": "https://github.com/rprkash10/Dynamic-Price-Predictor"
+                        },
+                        {
+                            "name": "OluomaOji/Dynamic-Pricing-and-Revenue-Optimization-Platform-for-Online-Retailers",
+                            "url": "https://github.com/OluomaOji/Dynamic-Pricing-and-Revenue-Optimization-Platform-for-Online-Retailers"
+                        },
+                        {
+                            "name": "AbhinavDubey30/Airline-Dynamic-Pricing-Model",
+                            "url": "https://github.com/AbhinavDubey30/Airline-Dynamic-Pricing-Model"
+                        },
+                        {
+                            "name": "heyparth10/Airbnb-dynamic-price-optimization",
+                            "url": "https://github.com/heyparth10/Airbnb-dynamic-price-optimization"
+                        },
+                        {
+                            "name": "yashviswami/AI-Powered-Dynamic-Grocery-Pricing-Waste-Reduction-Model",
+                            "url": "https://github.com/yashviswami/AI-Powered-Dynamic-Grocery-Pricing-Waste-Reduction-Model"
+                        },
+                        {
+                            "name": "krisdimitrov03/AirScan",
+                            "url": "https://github.com/krisdimitrov03/AirScan"
+                        },
+                        {
+                            "name": "ByteBardess/Effect-of-ICC-world-WorldCup-on-hotel-rates",
+                            "url": "https://github.com/ByteBardess/Effect-of-ICC-world-WorldCup-on-hotel-rates"
+                        },
+                        {
+                            "name": "arifsheikh2022syse/AI_Circular_Economy",
+                            "url": "https://github.com/arifsheikh2022syse/AI_Circular_Economy"
+                        },
+                        {
+                            "name": "Srivalli911/Dynamic-Price-Prediction-in-E-Commerce-Application",
+                            "url": "https://github.com/Srivalli911/Dynamic-Price-Prediction-in-E-Commerce-Application"
+                        },
+                        {
+                            "name": "aarya071205/Retail-store",
+                            "url": "https://github.com/aarya071205/Retail-store"
+                        },
+                        {
+                            "name": "DivyaVemula95/Uber-Business-Case-Study",
+                            "url": "https://github.com/DivyaVemula95/Uber-Business-Case-Study"
+                        },
+                        {
+                            "name": "Kanakgiri/Toman-Bike-Shop-Data-Analysis",
+                            "url": "https://github.com/Kanakgiri/Toman-Bike-Shop-Data-Analysis"
+                        },
+                        {
+                            "name": "krizzoc/RideShareApplication",
+                            "url": "https://github.com/krizzoc/RideShareApplication"
+                        },
+                        {
+                            "name": "suprachakra/SkyOptima",
+                            "url": "https://github.com/suprachakra/SkyOptima"
+                        },
+                        {
+                            "name": "Josephinecwm/Price-optimisation-for-Dartford-Crossing",
+                            "url": "https://github.com/Josephinecwm/Price-optimisation-for-Dartford-Crossing"
+                        },
+                        {
+                            "name": "sanahanji/Uber_Prediction_Models",
+                            "url": "https://github.com/sanahanji/Uber_Prediction_Models"
+                        },
+                        {
+                            "name": "Alex7020/Surgical-Incision-Closure-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecas",
+                            "url": "https://github.com/Alex7020/Surgical-Incision-Closure-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecas"
+                        },
+                        {
+                            "name": "Alex7020/Tag-Management-System-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecast",
+                            "url": "https://github.com/Alex7020/Tag-Management-System-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecast"
+                        },
+                        {
+                            "name": "Alex7020/Uv-Disinfection-Equipment-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecas",
+                            "url": "https://github.com/Alex7020/Uv-Disinfection-Equipment-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecas"
+                        },
+                        {
+                            "name": "Alex7020/Water-Treatment-Biocides-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecast",
+                            "url": "https://github.com/Alex7020/Water-Treatment-Biocides-Market-Report-2022-Competitive-Landscape-Trends-Opportunities-Forecast"
+                        }
+                    ],
+                    "research_papers": [
                         {
                             "title": "Housing Market Forecasting using Home Showing Events",
                             "url": "http://arxiv.org/abs/2201.04003v1"
                         },
                         {
-                            "title": "Probabilistic forecasting of heterogeneous consumer transaction-sales\n  time series",
-                            "url": "http://arxiv.org/abs/1808.04698v2"
+                            "title": "Elasticity Based Demand Forecasting and Price Optimization for Online\n  Retail",
+                            "url": "http://arxiv.org/abs/2106.08274v2"
                         },
                         {
-                            "title": "Dynamic Load Balancing for EV Charging Stations Using Reinforcement\n  Learning and Demand Prediction",
-                            "url": "http://arxiv.org/abs/2503.06370v1"
+                            "title": "Making forecasting self-learning and adaptive -- Pilot forecasting rack",
+                            "url": "http://arxiv.org/abs/2306.07305v1"
                         },
                         {
-                            "title": "What drives the European carbon market? Macroeconomic factors and\n  forecasts",
-                            "url": "http://arxiv.org/abs/2402.04828v2"
+                            "title": "Market Making with Stochastic Liquidity Demand: Simultaneous Order\n  Arrival and Price Change Forecasts",
+                            "url": "http://arxiv.org/abs/2101.03086v1"
+                        },
+                        {
+                            "title": "Leveraging Elastic Demand for Forecasting",
+                            "url": "http://arxiv.org/abs/1809.03018v1"
                         }
                     ]
                 }
             },
             {
-                "title": "Enhanced Driver Behavior Analysis & Safety Monitoring",
+                "title": "Personalized Recommendations and Marketing",
                 "resources": {
                     "huggingface_models": [
                         {
@@ -105,98 +281,12 @@
                     ],
                     "kaggle_datasets": [
                         {
-                            "message": "No relevant datasets found"
-                        }
-                    ],
-                    "github_repositories": [],
-                    "research_papers": [
-                        {
-                            "title": "Smart Driver Monitoring Robotic System to Enhance Road Safety : A\n  Comprehensive Review",
-                            "url": "http://arxiv.org/abs/2401.15762v1"
+                            "name": "ishanshrivastava28/tata-online-retail-dataset",
+                            "url": "https://www.kaggle.com/datasets/ishanshrivastava28/tata-online-retail-dataset"
                         },
                         {
-                            "title": "Enhancing Road Safety through Accurate Detection of Hazardous Driving\n  Behaviors with Graph Convolutional Recurrent Networks",
-                            "url": "http://arxiv.org/abs/2305.05670v1"
-                        },
-                        {
-                            "title": "Urban Traffic Monitoring and Modeling System: An IoT Solution for\n  Enhancing Road Safety",
-                            "url": "http://arxiv.org/abs/2003.07672v1"
-                        },
-                        {
-                            "title": "Using Visual and Vehicular Sensors for Driver Behavior Analysis: A\n  Survey",
-                            "url": "http://arxiv.org/abs/2308.13406v1"
-                        },
-                        {
-                            "title": "Enhancing Road Safety: Real-Time Detection of Driver Distraction through\n  Convolutional Neural Networks",
-                            "url": "http://arxiv.org/abs/2405.17788v1"
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Intelligent Route Optimization & Trip Management",
-                "resources": {
-                    "huggingface_models": [
-                        {
-                            "message": "No relevant models found"
-                        }
-                    ],
-                    "huggingface_datasets": [
-                        {
-                            "message": "No relevant datasets found"
-                        }
-                    ],
-                    "kaggle_datasets": [
-                        {
-                            "message": "No relevant datasets found"
-                        }
-                    ],
-                    "github_repositories": [],
-                    "research_papers": [
-                        {
-                            "title": "School bus routing by maximizing trip compatibility",
-                            "url": "http://arxiv.org/abs/1711.00530v2"
-                        },
-                        {
-                            "title": "The Commute Trip Sharing Problem",
-                            "url": "http://arxiv.org/abs/1904.11017v2"
-                        },
-                        {
-                            "title": "OpenTripPlanner, OpenStreetMap, General Transit Feed Specification:\n  Tools for Disaster Relief and Recovery",
-                            "url": "http://arxiv.org/abs/1609.01472v1"
-                        },
-                        {
-                            "title": "iDriveSense: Dynamic Route Planning Involving Roads Quality Information",
-                            "url": "http://arxiv.org/abs/1809.02855v1"
-                        },
-                        {
-                            "title": "The Benefits of Autonomous Vehicles for Community-Based Trip Sharing",
-                            "url": "http://arxiv.org/abs/2008.12800v2"
-                        }
-                    ]
-                }
-            },
-            {
-                "title": "Personalized Customer Experience & Recommendations",
-                "resources": {
-                    "huggingface_models": [
-                        {
-                            "message": "No relevant models found"
-                        }
-                    ],
-                    "huggingface_datasets": [
-                        {
-                            "message": "No relevant datasets found"
-                        }
-                    ],
-                    "kaggle_datasets": [
-                        {
-                            "name": "swathiunnikrishnan/amazon-consumer-behaviour-dataset",
-                            "url": "https://www.kaggle.com/datasets/swathiunnikrishnan/amazon-consumer-behaviour-dataset"
-                        },
-                        {
-                            "name": "validmodel/bigbasket-customer-analytics",
-                            "url": "https://www.kaggle.com/datasets/validmodel/bigbasket-customer-analytics"
+                            "name": "kartikeybartwal/ecommerce-product-recommendation-collaborative",
+                            "url": "https://www.kaggle.com/datasets/kartikeybartwal/ecommerce-product-recommendation-collaborative"
                         },
                         {
                             "name": "bhanupratapbiswas/customer-lifetime-value-analytics-case-study",
@@ -207,125 +297,364 @@
                             "url": "https://www.kaggle.com/datasets/datascientist97/e-commerece-sales-data-2024"
                         },
                         {
-                            "name": "himelsarder/cinema-hall-ticket-sales-and-customer-behavior",
-                            "url": "https://www.kaggle.com/datasets/himelsarder/cinema-hall-ticket-sales-and-customer-behavior"
+                            "name": "ahmedaliraja/e-commerece-sales-data-2023-24",
+                            "url": "https://www.kaggle.com/datasets/ahmedaliraja/e-commerece-sales-data-2023-24"
                         }
                     ],
-                    "github_repositories": [],
+                    "github_repositories": [
+                        {
+                            "name": "FarzadNekouee/Retail_Customer_Segmentation_Recommendation_System",
+                            "url": "https://github.com/FarzadNekouee/Retail_Customer_Segmentation_Recommendation_System"
+                        },
+                        {
+                            "name": "farrellwahyudi/Predicting-Ad-Clicks-Classification-by-Using-Machine-Learning",
+                            "url": "https://github.com/farrellwahyudi/Predicting-Ad-Clicks-Classification-by-Using-Machine-Learning"
+                        },
+                        {
+                            "name": "ZulqarnainZilli/-9-Email-Marketing-Tips-For-Content-Marketers",
+                            "url": "https://github.com/ZulqarnainZilli/-9-Email-Marketing-Tips-For-Content-Marketers"
+                        },
+                        {
+                            "name": "playmestudios/Simulator-3d-driving-games-Best-Simulation-2016",
+                            "url": "https://github.com/playmestudios/Simulator-3d-driving-games-Best-Simulation-2016"
+                        },
+                        {
+                            "name": "MohammedAlYafei/Privacy-and-policy",
+                            "url": "https://github.com/MohammedAlYafei/Privacy-and-policy"
+                        },
+                        {
+                            "name": "behavior-in-the-wild/behavior-in-the-wild.github.io",
+                            "url": "https://github.com/behavior-in-the-wild/behavior-in-the-wild.github.io"
+                        },
+                        {
+                            "name": "PranaliKanade/Generative-AI---Personalized-Product-Recommendations-and-Email-Marketing",
+                            "url": "https://github.com/PranaliKanade/Generative-AI---Personalized-Product-Recommendations-and-Email-Marketing"
+                        },
+                        {
+                            "name": "YouthfulByte/Marketing-Segmentation-Analysis",
+                            "url": "https://github.com/YouthfulByte/Marketing-Segmentation-Analysis"
+                        },
+                        {
+                            "name": "adityakapole/Customer-Segmentation-and-Recommendation-System",
+                            "url": "https://github.com/adityakapole/Customer-Segmentation-and-Recommendation-System"
+                        },
+                        {
+                            "name": "sheikhiahmed/RDBMS-Analysis-Project",
+                            "url": "https://github.com/sheikhiahmed/RDBMS-Analysis-Project"
+                        },
+                        {
+                            "name": "Vamsi-Krishna-24/Big-Data-Analysis-in-Social-Media-sphere",
+                            "url": "https://github.com/Vamsi-Krishna-24/Big-Data-Analysis-in-Social-Media-sphere"
+                        },
+                        {
+                            "name": "x10sic/Amazon-User-Segmentation",
+                            "url": "https://github.com/x10sic/Amazon-User-Segmentation"
+                        },
+                        {
+                            "name": "pavithradevi16/Beauty-Product-Recommendation",
+                            "url": "https://github.com/pavithradevi16/Beauty-Product-Recommendation"
+                        },
+                        {
+                            "name": "ROYALANNIE/Customer-Segmentation-for-an-E-commerce-Company",
+                            "url": "https://github.com/ROYALANNIE/Customer-Segmentation-for-an-E-commerce-Company"
+                        },
+                        {
+                            "name": "ricashukla/AI-for-Personalized-marketing",
+                            "url": "https://github.com/ricashukla/AI-for-Personalized-marketing"
+                        },
+                        {
+                            "name": "skinsight/GoTones-Personalized-Recommendations",
+                            "url": "https://github.com/skinsight/GoTones-Personalized-Recommendations"
+                        },
+                        {
+                            "name": "param171/Digital-marketing-process-for-ADIDAS-and-BUYER-PERSONA",
+                            "url": "https://github.com/param171/Digital-marketing-process-for-ADIDAS-and-BUYER-PERSONA"
+                        },
+                        {
+                            "name": "Mi11ena/ML-based-Marketing",
+                            "url": "https://github.com/Mi11ena/ML-based-Marketing"
+                        },
+                        {
+                            "name": "SP-Java-IND-30-0/SmartBankAdviser",
+                            "url": "https://github.com/SP-Java-IND-30-0/SmartBankAdviser"
+                        },
+                        {
+                            "name": "Manish-kumar-yada/Product-recommendation-system-for-super-marketing",
+                            "url": "https://github.com/Manish-kumar-yada/Product-recommendation-system-for-super-marketing"
+                        },
+                        {
+                            "name": "luisbdavila/Customer_Segmentation_Targeted_Marketing_Python",
+                            "url": "https://github.com/luisbdavila/Customer_Segmentation_Targeted_Marketing_Python"
+                        },
+                        {
+                            "name": "Santanu2941/Task_02_ML_ProdigyInfoTech",
+                            "url": "https://github.com/Santanu2941/Task_02_ML_ProdigyInfoTech"
+                        },
+                        {
+                            "name": "Abishek077/upliance",
+                            "url": "https://github.com/Abishek077/upliance"
+                        },
+                        {
+                            "name": "Meghanachalla2805github/PRODIGY-ML-TASK-02",
+                            "url": "https://github.com/Meghanachalla2805github/PRODIGY-ML-TASK-02"
+                        },
+                        {
+                            "name": "HadeelAls618/Customer-Analytics-Assistant",
+                            "url": "https://github.com/HadeelAls618/Customer-Analytics-Assistant"
+                        },
+                        {
+                            "name": "TJZLiu/Wonderful-Wines-of-the-World",
+                            "url": "https://github.com/TJZLiu/Wonderful-Wines-of-the-World"
+                        },
+                        {
+                            "name": "MissCheptoo/-CUSTOMER_SEGMENTATION",
+                            "url": "https://github.com/MissCheptoo/-CUSTOMER_SEGMENTATION"
+                        },
+                        {
+                            "name": "bhushannarule/Customer-Segmentation-Analysis",
+                            "url": "https://github.com/bhushannarule/Customer-Segmentation-Analysis"
+                        },
+                        {
+                            "name": "SivanisIyer/E-Commerce",
+                            "url": "https://github.com/SivanisIyer/E-Commerce"
+                        },
+                        {
+                            "name": "JuliusHmto/Airline-Customer-Segmentation",
+                            "url": "https://github.com/JuliusHmto/Airline-Customer-Segmentation"
+                        }
+                    ],
                     "research_papers": [
                         {
-                            "title": "A Hybrid Recommendation Method Based on Feature for Offline Book\n  Personalization",
-                            "url": "http://arxiv.org/abs/1804.11335v1"
+                            "title": "Enhancing Cross-Market Recommendation System with Graph Isomorphism\n  Networks: A Novel Approach to Personalized User Experience",
+                            "url": "http://arxiv.org/abs/2409.07850v1"
                         },
                         {
-                            "title": "Reusable Self-Attention-based Recommender System for Fashion",
-                            "url": "http://arxiv.org/abs/2211.16366v1"
+                            "title": "AI in Food Marketing from Personalized Recommendations to Predictive\n  Analytics: Comparing Traditional Advertising Techniques with AI-Driven\n  Strategies",
+                            "url": "http://arxiv.org/abs/2410.01815v1"
                         },
                         {
-                            "title": "Neural Contextual Bandits for Personalized Recommendation",
-                            "url": "http://arxiv.org/abs/2312.14037v1"
+                            "title": "Addressing Marketing Bias in Product Recommendations",
+                            "url": "http://arxiv.org/abs/1912.01799v1"
                         },
                         {
-                            "title": "Digital Human Interactive Recommendation Decision-Making Based on\n  Reinforcement Learning",
-                            "url": "http://arxiv.org/abs/2210.10638v4"
+                            "title": "Personality-Driven Social Multimedia Content Recommendation",
+                            "url": "http://arxiv.org/abs/2207.12236v1"
                         },
                         {
-                            "title": "AI Recommendation System for Enhanced Customer Experience: A Novel\n  Image-to-Text Method",
-                            "url": "http://arxiv.org/abs/2311.09624v1"
+                            "title": "Labour Market Information Driven, Personalized, OER Recommendation\n  System for Lifelong Learners",
+                            "url": "http://arxiv.org/abs/2005.07465v1"
                         }
                     ]
                 }
             },
             {
-                "title": "Fraud Detection & Prevention",
+                "title": "Fraud Detection and Security Enhancement",
                 "resources": {
                     "huggingface_models": [
                         {
-                            "name": "kmasiak/FraudDetection",
-                            "url": "https://huggingface.co/kmasiak/FraudDetection"
-                        },
-                        {
-                            "name": "0amiruddin0/frauddetection",
-                            "url": "https://huggingface.co/0amiruddin0/frauddetection"
-                        },
-                        {
-                            "name": "Rakesh12345/Credit_Card_Fraud_Detection",
-                            "url": "https://huggingface.co/Rakesh12345/Credit_Card_Fraud_Detection"
-                        },
-                        {
-                            "name": "SaiMadhuree2801/Credit-Card-Fraud-Detection",
-                            "url": "https://huggingface.co/SaiMadhuree2801/Credit-Card-Fraud-Detection"
-                        },
-                        {
-                            "name": "SquareBracket/fraud_detection",
-                            "url": "https://huggingface.co/SquareBracket/fraud_detection"
+                            "message": "No relevant models found"
                         }
                     ],
                     "huggingface_datasets": [
                         {
-                            "name": "Nooha/cc_fraud_detection_dataset",
-                            "url": "https://huggingface.co/datasets/Nooha/cc_fraud_detection_dataset"
-                        },
-                        {
-                            "name": "purulalwani/Synthetic-Financial-Datasets-For-Fraud-Detection",
-                            "url": "https://huggingface.co/datasets/purulalwani/Synthetic-Financial-Datasets-For-Fraud-Detection"
-                        },
-                        {
-                            "name": "vitaliy-sharandin/synthetic-fraud-detection",
-                            "url": "https://huggingface.co/datasets/vitaliy-sharandin/synthetic-fraud-detection"
-                        },
-                        {
-                            "name": "liberatoratif/Credit-card-fraud-detection",
-                            "url": "https://huggingface.co/datasets/liberatoratif/Credit-card-fraud-detection"
-                        },
-                        {
-                            "name": "Chuka-J-Uzo/5Million_fraud_detection_dataset",
-                            "url": "https://huggingface.co/datasets/Chuka-J-Uzo/5Million_fraud_detection_dataset"
+                            "message": "No relevant datasets found"
                         }
                     ],
                     "kaggle_datasets": [
                         {
-                            "name": "bhadramohit/credit-card-fraud-detection",
-                            "url": "https://www.kaggle.com/datasets/bhadramohit/credit-card-fraud-detection"
+                            "message": "No relevant datasets found"
+                        }
+                    ],
+                    "github_repositories": [
+                        {
+                            "name": "djdprogramming/adfa2",
+                            "url": "https://github.com/djdprogramming/adfa2"
                         },
                         {
-                            "name": "ranjitmandal/fraud-detection-dataset-csv",
-                            "url": "https://www.kaggle.com/datasets/ranjitmandal/fraud-detection-dataset-csv"
+                            "name": "AkuratiHemanth/Fraud_Detection",
+                            "url": "https://github.com/AkuratiHemanth/Fraud_Detection"
                         },
                         {
-                            "name": "chitwanmanchanda/fraudulent-transactions-data",
-                            "url": "https://www.kaggle.com/datasets/chitwanmanchanda/fraudulent-transactions-data"
+                            "name": "sreevardhanp99/Fraud_Detection_on_Bank_Payments",
+                            "url": "https://github.com/sreevardhanp99/Fraud_Detection_on_Bank_Payments"
                         },
                         {
-                            "name": "isabbaggin/transaction-fraudulent-financial-syntheticdata",
-                            "url": "https://www.kaggle.com/datasets/isabbaggin/transaction-fraudulent-financial-syntheticdata"
+                            "name": "VRINDHAB/IRetail-Major-project-",
+                            "url": "https://github.com/VRINDHAB/IRetail-Major-project-"
                         },
                         {
-                            "name": "devildyno/upi-payment-transactions-dataset",
-                            "url": "https://www.kaggle.com/datasets/devildyno/upi-payment-transactions-dataset"
+                            "name": "alimustafa0/FraudGuard",
+                            "url": "https://github.com/alimustafa0/FraudGuard"
+                        },
+                        {
+                            "name": "RobertRusev/ML-FinFraud-Detector",
+                            "url": "https://github.com/RobertRusev/ML-FinFraud-Detector"
+                        },
+                        {
+                            "name": "privatemohit/online-secure-voting-system-using-ml",
+                            "url": "https://github.com/privatemohit/online-secure-voting-system-using-ml"
+                        },
+                        {
+                            "name": "Youssef-Osama1/Fraud-and-Anomaly-Detection",
+                            "url": "https://github.com/Youssef-Osama1/Fraud-and-Anomaly-Detection"
+                        },
+                        {
+                            "name": "SivasuthanSukumar/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/SivasuthanSukumar/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "MissCheptoo/-CREDIT-CARD-FRAUD-DETECTION",
+                            "url": "https://github.com/MissCheptoo/-CREDIT-CARD-FRAUD-DETECTION"
+                        },
+                        {
+                            "name": "Amit380/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/Amit380/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "SagarMandal7/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/SagarMandal7/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "smangal1308/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/smangal1308/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "McGill-MMA-EnterpriseAnalytics/Fraud-Detection",
+                            "url": "https://github.com/McGill-MMA-EnterpriseAnalytics/Fraud-Detection"
+                        },
+                        {
+                            "name": "gunjanBabu29/Credit-Card-Fraud-Detection-",
+                            "url": "https://github.com/gunjanBabu29/Credit-Card-Fraud-Detection-"
+                        },
+                        {
+                            "name": "yassinessadi/Fraud-Detection-in-Financial-Transactions",
+                            "url": "https://github.com/yassinessadi/Fraud-Detection-in-Financial-Transactions"
+                        },
+                        {
+                            "name": "G-Aarush-Raj/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/G-Aarush-Raj/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "Thakshila-Shilpadi/PAN-Card-Security-and-Tampering-Detection",
+                            "url": "https://github.com/Thakshila-Shilpadi/PAN-Card-Security-and-Tampering-Detection"
+                        },
+                        {
+                            "name": "femodaniel/fraud-detection-mlnet",
+                            "url": "https://github.com/femodaniel/fraud-detection-mlnet"
+                        },
+                        {
+                            "name": "chimpsab/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/chimpsab/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "nderitugichuki/Fraud-Detection-Machine-Learning",
+                            "url": "https://github.com/nderitugichuki/Fraud-Detection-Machine-Learning"
+                        },
+                        {
+                            "name": "Ian-Kwach/Credit-Card-Fraud-Detection",
+                            "url": "https://github.com/Ian-Kwach/Credit-Card-Fraud-Detection"
+                        },
+                        {
+                            "name": "Vaibhav-kesarwani/Online_Payment_Fraud_Detection",
+                            "url": "https://github.com/Vaibhav-kesarwani/Online_Payment_Fraud_Detection"
+                        },
+                        {
+                            "name": "saikolupoti/Online-Fraud-Detection-Using-ML",
+                            "url": "https://github.com/saikolupoti/Online-Fraud-Detection-Using-ML"
+                        },
+                        {
+                            "name": "CherrrYY123/Credit-card-Fraud-detection-analysis",
+                            "url": "https://github.com/CherrrYY123/Credit-card-Fraud-detection-analysis"
+                        },
+                        {
+                            "name": "idk-mr4tyunjay/PRAYATNA_CodeBuffs",
+                            "url": "https://github.com/idk-mr4tyunjay/PRAYATNA_CodeBuffs"
+                        },
+                        {
+                            "name": "asif-mp3/Anomaly-Detection-in-Financial-Transactions",
+                            "url": "https://github.com/asif-mp3/Anomaly-Detection-in-Financial-Transactions"
+                        },
+                        {
+                            "name": "GAUTHAMSAIKUMAR/DETECTION-OF-MORPHED-FACES-USING-DEEPLEARNING",
+                            "url": "https://github.com/GAUTHAMSAIKUMAR/DETECTION-OF-MORPHED-FACES-USING-DEEPLEARNING"
+                        },
+                        {
+                            "name": "mohitsinghnegi1/online-smart-voting-system-and-android-app",
+                            "url": "https://github.com/mohitsinghnegi1/online-smart-voting-system-and-android-app"
+                        },
+                        {
+                            "name": "BharatSindhi/Email_Fraud_detection",
+                            "url": "https://github.com/BharatSindhi/Email_Fraud_detection"
+                        }
+                    ],
+                    "research_papers": [
+                        {
+                            "title": "Enhancing Security in Blockchain Networks: Anomalies, Frauds, and\n  Advanced Detection Techniques",
+                            "url": "http://arxiv.org/abs/2402.11231v1"
+                        },
+                        {
+                            "title": "Dynamic Feature Fusion: Combining Global Graph Structures and Local\n  Semantics for Blockchain Fraud Detection",
+                            "url": "http://arxiv.org/abs/2501.02032v1"
+                        },
+                        {
+                            "title": "Credit Card Fraud Detection Using Enhanced Random Forest Classifier for\n  Imbalanced Data",
+                            "url": "http://arxiv.org/abs/2303.06514v1"
+                        },
+                        {
+                            "title": "Utilizing GANs for Fraud Detection: Model Training with Synthetic\n  Transaction Data",
+                            "url": "http://arxiv.org/abs/2402.09830v1"
+                        },
+                        {
+                            "title": "Proactive Fraud Defense: Machine Learning's Evolving Role in Protecting\n  Against Online Fraud",
+                            "url": "http://arxiv.org/abs/2410.20281v1"
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Driver Performance Monitoring and Safety Assistance",
+                "resources": {
+                    "huggingface_models": [
+                        {
+                            "message": "No relevant models found"
+                        }
+                    ],
+                    "huggingface_datasets": [
+                        {
+                            "message": "No relevant datasets found"
+                        }
+                    ],
+                    "kaggle_datasets": [
+                        {
+                            "name": "sudhanshu2198/insurance-claim-prediction",
+                            "url": "https://www.kaggle.com/datasets/sudhanshu2198/insurance-claim-prediction"
+                        },
+                        {
+                            "name": "ranatariq09/vehicular-network-vanet-deployment-offloading",
+                            "url": "https://www.kaggle.com/datasets/ranatariq09/vehicular-network-vanet-deployment-offloading"
                         }
                     ],
                     "github_repositories": [],
                     "research_papers": [
                         {
-                            "title": "Proactive Fraud Defense: Machine Learning's Evolving Role in Protecting\n  Against Online Fraud",
-                            "url": "http://arxiv.org/abs/2410.20281v1"
+                            "title": "A Survey and Tutorial of EEG-Based Brain Monitoring for Driver State\n  Analysis",
+                            "url": "http://arxiv.org/abs/2008.11226v1"
                         },
                         {
-                            "title": "AI-based Identity Fraud Detection: A Systematic Review",
-                            "url": "http://arxiv.org/abs/2501.09239v1"
+                            "title": "Hybrid Human-Machine Perception via Adaptive LiDAR for Advanced Driver\n  Assistance Systems",
+                            "url": "http://arxiv.org/abs/2502.17309v1"
                         },
                         {
-                            "title": "\"Auntie, Please Don't Fall for Those Smooth Talkers\": How Chinese\n  Younger Family Members Safeguard Seniors from Online Fraud",
-                            "url": "http://arxiv.org/abs/2501.10803v1"
+                            "title": "SCOUT+: Towards Practical Task-Driven Drivers' Gaze Prediction",
+                            "url": "http://arxiv.org/abs/2404.08756v1"
                         },
                         {
-                            "title": "Efficient Fraud Detection Using Deep Boosting Decision Trees",
-                            "url": "http://arxiv.org/abs/2302.05918v2"
+                            "title": "Driver Activity Classification Using Generalizable Representations from\n  Vision-Language Models",
+                            "url": "http://arxiv.org/abs/2404.14906v1"
                         },
                         {
-                            "title": "Occupational Fraud Detection Through Visualization",
-                            "url": "http://arxiv.org/abs/1304.6501v1"
+                            "title": "Multitasking while Driving: How Drivers Self-Regulate their Interaction\n  with In-Vehicle Touchscreens in Automated Driving",
+                            "url": "http://arxiv.org/abs/2305.16042v1"
                         }
                     ]
                 }
