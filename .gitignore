@@ -34,3 +34,6 @@ Thumbs.db
 
 resources.md
 staticfiles/
+
+# research_agent/__init__.py
+research_agent/result.json

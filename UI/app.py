@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 
 # Django API endpoint
-# BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
-BACKEND_URL = "http://localhost:8000/"
+BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
+# BACKEND_URL = "http://localhost:8000/"
 
 st.set_page_config(page_title="Research Agent", layout="wide")
 
