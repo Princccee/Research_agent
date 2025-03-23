@@ -1,0 +1,540 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 62 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 61 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset)
+>> /Border [ 0 0 0 ] /Rect [ 98 286.0398 244.71 298.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/ziya07/smart-grid-real-time-load-monitoring-dataset)
+>> /Border [ 0 0 0 ] /Rect [ 98 274.0398 325.27 286.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2106.08274v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 244.0398 442.01 256.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2201.04003v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 232.0398 353.65 244.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1808.04698v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 220.0398 460.36 232.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2503.06370v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 208.0398 478.72 220.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2503.06370v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 196.0398 183.03 208.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2402.04828v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 184.0398 454.81 196.0398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R ] /Contents 63 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 61 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2401.15762v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 740.6398 510.92 752.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2305.05670v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 728.6398 490.95 740.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2305.05670v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 716.6398 280.28 728.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+18 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2003.07672v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 704.6398 500.4 716.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2308.13406v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 692.6398 429.22 704.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+20 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2405.17788v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 680.6398 490.37 692.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2405.17788v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 668.6398 171.9 680.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1711.00530v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 536.2398 321.4 548.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+23 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1904.11017v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 524.2398 258.6 536.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1609.01472v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 512.2398 493.71 524.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+25 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1609.01472v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 500.2398 188.03 512.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1809.02855v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 488.2398 428.12 500.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2008.12800v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 476.2398 421.46 488.2398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+28 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/swathiunnikrishnan/amazon-consumer-behaviour-dataset)
+>> /Border [ 0 0 0 ] /Rect [ 98 373.8398 351.98 385.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+29 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/validmodel/bigbasket-customer-analytics)
+>> /Border [ 0 0 0 ] /Rect [ 98 361.8398 278.05 373.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+30 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/bhanupratapbiswas/customer-lifetime-value-analytics-case-study)
+>> /Border [ 0 0 0 ] /Rect [ 98 349.8398 384.75 361.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+31 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/datascientist97/e-commerece-sales-data-2024)
+>> /Border [ 0 0 0 ] /Rect [ 98 337.8398 303.63 349.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+32 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/himelsarder/cinema-hall-ticket-sales-and-customer-behavior)
+>> /Border [ 0 0 0 ] /Rect [ 98 325.8398 363.61 337.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+33 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1804.11335v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 295.8398 478.72 307.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+34 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2211.16366v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 283.8398 390.89 295.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+35 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2312.14037v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 271.8398 370.33 283.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+36 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2210.10638v4)
+>> /Border [ 0 0 0 ] /Rect [ 98 259.8398 480.35 271.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+37 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2210.10638v4)
+>> /Border [ 0 0 0 ] /Rect [ 98 247.8398 136.91 259.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+38 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2311.09624v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 235.8398 491.48 247.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+39 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2311.09624v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 223.8398 131.35 235.8398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+40 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/kmasiak/FraudDetection)
+>> /Border [ 0 0 0 ] /Rect [ 98 151.4398 205.81 163.4398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+41 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/0amiruddin0/frauddetection)
+>> /Border [ 0 0 0 ] /Rect [ 98 139.4398 219.17 151.4398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+42 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/Rakesh12345/Credit_Card_Fraud_Detection)
+>> /Border [ 0 0 0 ] /Rect [ 98 127.4398 295.86 139.4398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+43 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/SaiMadhuree2801/Credit-Card-Fraud-Detection)
+>> /Border [ 0 0 0 ] /Rect [ 98 115.4398 309.18 127.4398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+44 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/SquareBracket/fraud_detection)
+>> /Border [ 0 0 0 ] /Rect [ 98 103.4398 235.85 115.4398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+45 0 obj
+<<
+/Annots [ 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 
+  25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 
+  35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R ] /Contents 64 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 61 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+46 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/bhadramohit/credit-card-fraud-detection)
+>> /Border [ 0 0 0 ] /Rect [ 98 752.6398 273.62 764.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+47 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/ranjitmandal/fraud-detection-dataset-csv)
+>> /Border [ 0 0 0 ] /Rect [ 98 740.6398 276.4 752.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+48 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/chitwanmanchanda/fraudulent-transactions-data)
+>> /Border [ 0 0 0 ] /Rect [ 98 728.6398 311.43 740.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+49 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/isabbaggin/transaction-fraudulent-financial-syntheticdata)
+>> /Border [ 0 0 0 ] /Rect [ 98 716.6398 348.11 728.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+50 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kaggle.com/datasets/devildyno/upi-payment-transactions-dataset)
+>> /Border [ 0 0 0 ] /Rect [ 98 704.6398 291.41 716.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+51 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2410.20281v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 674.6398 490.63 686.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+52 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2410.20281v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 662.6398 124.12 674.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+53 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2501.09239v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 650.6398 346.43 662.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+54 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2501.10803v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 638.6398 514.37 650.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+55 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2501.10803v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 626.6398 264.18 638.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+56 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/2302.05918v2)
+>> /Border [ 0 0 0 ] /Rect [ 98 614.6398 373.66 626.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+57 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://arxiv.org/abs/1304.6501v1)
+>> /Border [ 0 0 0 ] /Rect [ 98 602.6398 329.21 614.6398 ] /Subtype /Link /Type /Annot
+>>
+endobj
+58 0 obj
+<<
+/Annots [ 46 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 
+  56 0 R 57 0 R ] /Contents 65 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 61 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+59 0 obj
+<<
+/PageMode /UseNone /Pages 61 0 R /Type /Catalog
+>>
+endobj
+60 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20250323062444+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250323062444+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+61 0 obj
+<<
+/Count 4 /Kids [ 5 0 R 14 0 R 45 0 R 58 0 R ] /Type /Pages
+>>
+endobj
+62 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2159
+>>
+stream
+Gau0CacbE"&\[K\ntb3rC^:Eb`OD-Zfc;;?nq_@,kY_PH5Rjut$6Yi7HG?O*WFcZr4[&KA,Id_A/h^SGb_dge.rt)]:%Wa'YMM\^`O&lK1^PM9Hr"[I0>>/V%f`'DBf:g"q0Xp;'=\Xc)l@k2B;:YN(oUjmVDo8gE@cjABeTp'!1.^EIB4.]]l!+4ZPh4fCg!1-`0[Var=?:5KpI4^S$Q`=ahR@,O!^A#P=%0fDG=c-e#au"NM\>k\HFti\7N"s]K:jfa`3bET<sWjc9*4l3(+738J"C3'#W\r0b!C!i3V.$]<#%V9\PYEkcW#b5'itB.fcPT[gcnch5P!^-*-t0TM3[dF4/;fmSI-kBfM0L!q>ne22/&6_dhtjY*IE([;"?#,HaW4QAj,bVGt.T9gMg!a;?(2VR;`L2#QYoQ;%%AD*[RDTuij0<',u_ID^%[9:To(/(CVH9r]TM(TN82eXg*6C9)2C[md"7:/shDVqYgYHb%\mYlhmTXsIkn>+;stY/GNf[I"0\>3aj`ca2jmMC.19ea5t19WIEs,JoBA>*aO;d&9_&J:d7['?Q2qE2e+5(]^BApJ_0'2R_+*'<)+\jtd>k8\191d`oK9g5#d)\&`<@bhohjo3aOs)/ZqK#@F[KPrCU\.kCVcI9NZCL?WlcaM-);9`O)mrJ+AVcf6h5E=bk\Zd<bc!:5j(cTdT[_$ULc=(`T$5MI2sKkn2=$PHFK*`"o>I'7l"UoN]W4Di-YIK)1MnU*'^Vp;L)Fdii+^eA`ti/,c+^e\K=+I@_urZV9R1(JPrVt64)d>Ba%iQQ3Q9[YakI=[*]\OKV#YBAuS_kFZmNG:5.%)+M8i+,hLj913K,pO^X";h9u]*?@'*fh6,bk#L*=P^3h_,YbO-:)lZQdRQKh0PYFh;5jAn=G*;$uN4bYPFg7dK`OmCklI]En^NX?/iT#knjVa5(Sn9J8^k4E%Q$[[[\f4Gk@0Ull/sjN'8,M4fHNB+O]m"R6H_RdG+O.,^82HmAbs&Be1RH?`S,[,S8qaGKbDJ#ur[Eg-V+@To*m@/,D$dFj8F=nT-p\2u10thMeFK4k7Qjd`^#&*@n?4UuacJ^AK*a<`q>RFh$.tPGn($41R55H_AcL[c:%P9ZjTN:9dC_*$.72pQJH&YU"MKFk*0qlrB^BBl\7f>AM+;&<a$20_uF,AnMUfRpV\Ts/fOhMple?YsXB?2mdaG6j#ts0te8(?h\opC>EDKO5B/?6=Bg@d4nh0+C=?-]K$\AJPN5CNn&l[o_,)eUKTV98;umLVN\XZjsEL"DkU34VMYfKb-o6J>#c3cTjKk<0;S/GnFp*'6S#N`:>Z3Z&uqrN7l`Z(1j^TO5.E>3o_o\X&]tPV]2Id[_&j4.Y)ArnYGHUEKY+q8[@oVjWY*Tk%?q<lK\eeQY<7AsN6bZ-Aq\KG7akjl=jQ4&@"dA\aUg]bQ3S<9IBITJJJ-0[b@)#:*pf*:;6%*"$$?K'Dg^MNZ`Fe<a";>c>86'CI9(+f%6h.YQH$YA=%TpsrN#<-d]7Va53_%3?H'`)4`-06!\?eWEcjfl$^&E(mG1fR;8n$4qCGiE`YIM\pEE8L*a;m(@?,Y[]t)6!kc;L),nK85\OnT"R',KITOe2j2a6rgl3K>;keu5V/;U3"BE*H[X>lZ>SG`bOp!EUm($dIg4^)?BLA]fNh>o+^gSnKt;C[5XJBhne0pN)M-Xf6n\=[rcnbBApLB4d%B/(CKH><,uZs/J*9=h979KIV3X"0HPUmreY/582?V6E6$A5u4m+-b"7U2`7pdmK(9/LJ4c*]IL=cGCi0plVF)3*CbLehs#bDY`3d&"1`AL_SR.>]nUNS.4O8o2=QiU96q1h8)G=bO05n2&Q1'#BL6Q4cWho%I]P'SWsk[-)Q4AYngBq0!:ktQ)rds`XQFs_l:M6MX/KG_I.[m^S:PbFR+5KFb_!LWcTE<qboSL4GR)%2qXJ(1cT?"5hd#)oAWr(dI^i]Iti&6POM-SQ_c4"7VOjPB8!a:=1*C617YO%6ZB%\DK)STJ3<R;m3XXOMa,).W#Y>R/X-6-DL':!)dHjeUDa0YO5U27cVI"cc=FEY8$UNf`I]aD@1B+K-RPL%X5)CDJfb5taoJN.*/a7$Q7G2lY>Q[(T>p,F&NP1-?`UsTD?~>endstream
+endobj
+63 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2152
+>>
+stream
+Gau0D9lo&K%))C:i7)mn@`S&;ZBq,j8Z";uCt$>7Hc^u-+I`g/Whe_*rUgOpZ7MoV&ngLo['_Im+Fo6&7g@><5Crhn8cdeni:JdT?i[M9Jl-FhZ]B&[HhI&3:p$7B0Fc%80K]a-NE8>kU$n?&"YU-r-c687;Wum>e*.g=I=^)?]_6Ear7S7KY<OfWZ6A\Iml_36Ds'`-REG!^+=U,QA@*l8/=/huJAo$SkXfZ'#'"&TrsXahO9t)H0@79D&3:"_Dj4:3.p$CC>OA)f>3^h-_/+tdeh4uW,,%:NB-:MrOig3C[0@4m.9mA6'KMSL$\r7n6_X$SL/C_'E.p>s[HY;`La!`.D^Vn\OX)]60-YO_D]guh'So2NI3Dh(ZnJ+t)q%TJKo0<!+E`\PMMnQ#aF":@?_R^ZFsSU,g6Iiq#bR?39<!W*UepEo,RH&_V'C&M:&#,pG#l,;O[;SBgZLM7)\=BQ1'5PoQ)LI#Dl9h3+!IO(p*NdR+$H'GKDO!Ih.$,heq$?Bl/g9A8mm8ZkZh'FN#%:#(;kJk]1FH7$VIef*?i(M)iRIZU5jZL?/$,BPNG(&UMit\Dm0U5nu.68*r]jG0FXTG^bPhEmm1kS),AN'@.jSk[hSE04$qo9DB]m9f<KuO+ACk9Y"p1H82V^KKE")AB1Ut'`0rHD6]1]f`:QEK(sbWm?Qq).AjraZ!VF(/XI3P0RnV]p1?J6Akc^feJ7qjc7uLUr,$rt1NCiV]<qb_Tg9Q"h4*[6+ME^fP[?b2_hE!`W_+*B>(p%HNB<dEmHPu1Y==fQ$@peW3D+BPM;o^Q18lCH$Fg/@=SbSe*>>PcseD/L)gln9ZT3PSEO3O9.rE^%oJoL)"bNl.)oO!(Ak+n`'SXNK";mS(ML*eCeb_9#,K'3D,Q?aOW<:_\;m%VTH[LA8pdoANm8T]e=F(Bi<g''5BV8D)!?BGZ`cnS.hN\$@`/^Q%#eiP;GPjCs5N8Ni%bjSCQIWH5Yc3l!W3_'Tk4andt=%#[mDMrN.)_"_(E%gfrM449q<n9ICeF)'fnpK)3?n:*Sj.J?b:PIiF\:/N:'jb'04$BK@pkC$U]=*18aDDC[DPl=`GRW">Ku&rop64?pO;`"-n!p+L-6l>T9.D!]C*Z/]@T4X1G_jLQm?*g%iBtJ=.278BZ<54R@\__8\:;GA1lX#9VaAS.:k#LkNO`[&:r7\!Uu$?3Yt("UU]4od2@>2HZQmPtVYL>U=U@dE]$!VrR)3\Q8u^$k1GhlP,o3;?$<L'JRgbK'd]OQ6<UQi!\]3EIFYB&GkK9*CX=V&C84?Nd0])i"qS/2:eUq$*<`DKZU5G<A@+e.u;*/3b<%kSo6n3:QW-Q668eJU1"3rWN5h*2#:L+9ZM(iRXlDlf'*4O=kR6lqJP&nQu5DZaGdt0@IIZ0+3<*mi01)4Tej<SZaAq/5JlmJOdFBCbR)R^;dl-NN.#+[2Z6Zqhg4<.'7jq!W&'Y*3f7O#I/"26T[feaF(rNG1mPi=gsU.4\HDIP:_+N>as5L?>Uj-MmlXuuZi[cNU221l^QAcEWRfsL`H(lt-VDhaCkQ!d<gZ=lSS(Uq@=3.#AfrXt+m*@B''Y<'n^1H#N"RB`X^__NR?E(_dXe*=m'bt=@Gj"dXcQl7Q!KUA@gY`E8i0%Zg^4a!R/o'V)dB:&7UlLKM49Crj@;kkXqRcfDcIWf`R!JHhmAibq5CV^@b*?_,P-?Jh-A6pZrU58X>S_&XD8;b/<4jd->]PcBY7sraB[ET/dY&95K(`Y@2L@rIDs'Sr40AsuGpRSP3#9QLB_sPl7n<]'(Ruk='#%tu8ZXNg:33THPMn)fMX3IKA___[jA4Y+8"_qSA;dMnTAnX`'XqN?-\B"B17^c+9i9[:V(_!!uKr4[`"F=]:D*JY/&E";h'?U>Cq;Pb+^SI&5J%s7/$\Npk#&]NeO<KVA(#HujO;HZne#D&51[WrC0L9qW12'iU$mbj)7:,7Dk>0/8Kf'a2@#K]/;ob6fgHVZ?,&?DpW=A$RY=qV9:H-((LW:[ADbV<<)@[T$We]f>$bbWu4sI4/n@mX^3V^cF8':K^gkl5kkcX4Hd(7E:i5rUe?_Xu\T`;kjl=Zfa@K#t9lceO.3]X@s$N"$\^HQ.%lS$RdV*+J7$srlC82QYV~>endstream
+endobj
+64 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1972
+>>
+stream
+Gau0Ehc&N*&:XAWkbg$$C*Q=F&b&M:=fkn6(V"n).VhQn1.RL9-PI3oqWf"1#E+Rp1M)h_#jKJ*c.CcYNukh'j-ee5$IBk^A)Mq$_fuMpl`:9MDt%=co'=6KHo'tQd.Ybrh-QG>TGt&E+_N1pXLAX/!E'9dKBJ\"^(,6G`#P0RA%6.ZPkk+s0`Dm.J*Ibtd*M,0c/*W/hn@V?[9^K>ks&Jcm)4C5hV4%h%L-hf_^K(o_3O(SP]/-.Y(Ylh%#/48'G"WZaq^eH"FS=#QA%kR=9Kj,7C@_g\:@57/gSH(jV.fO\E*Eeb(SA1OpTH!KF07-n#5_ZHb!6'>bcefW+%35=UZ*T=@f;#Y#&Q*\B$p/iL2nc)2TOr*9q26(pbM)15AB&ig1HEr@6JE-F0qR8.,;P98G,+.5=b?L[%aXH!X+5gT4=?<qL,>qHH]s#%PcP;\G%c+dPQ=).B6mej:RsA8id50\W`2;^#R&nRY[AH<uS1f[23IO_YLmH!\kcCA:"Jk$aB+#pW%R/IIJ]PAW$G+\l.Fb'C/=BiN/"Q@nW/FXE1jrZ`'>S7KnXB?\g`WO$$lMW[U;oqsIR[Z`&m'Y6Y(^uV.nl*QpmXUU)q\,9W\ldm1tG_X,UTP=Co_@$HbHBTdO&jFbN3tqj`K's)d;uY"bbC?6+i![&+)4P&,?RgIif7&W-?0Aedc%t?[UKVK>X1[u0HgU2e+.k$+oP1@G-U;-m91EHh"pUnnO[Z*KJn%CLMp5i?l&R9ZUO%^#:9BIt5(^%Q"69I->/tYa`SRtk[;sh\QEsF*$^&5XqD2+eV+]9J"Y"fHBreG%:>(^[%-?u3-bR+\[/FU-0WjQh@#eaH4tP5AaV:FGbY/DYQXZ+c>)'$,lQ(iHTQXe"YLlUa0/1jgmLtmt-pN@`@&,'B\n-fGn.k1dC'\?5aF#HS+B$Zk@*$HGR$rC4A(poVe)`S7$R3(IA4X]CVl!1P&JNZP9)$'M%;O[F4*n<JkGF;TH\(@![E;TD/o9@8$uoGT2nGP4?Q*tq5KKIYeEM$`-8ebf64`A*DEE/eg%S&@;biU>*5t@?6mbh!`f9L\E4tok29;)dS3BrtBI?5@EHf&OGJB&L;+YehEY8%F9=:n\ch&QN7BT$N0'LIleQ@iX_"qU&R$*)Xbg)FkSX*p'7u]^,7Iu(7T*DC\p%sPWpK5kDpkWNY-Y%>lC5h889Z=Z;atT/EO#*(Z=N[4(k(G"gK%0!XerrZKSW2#F`G&mT%61KReSm,ia!)ab`e;Yb/>&\X_G.m-9[?t$LS`\SD"[(HAjrm-D*i;EZ&l=OM[?<[bSsbk$)aJTAhAer(\e?d$#(KP>SU+MQYSL33Y>TDX!'A^%&lKA)Ad`d"!(;a-&)P[;5#p@FaVeZQ,<.IFi*_\Xt+GK`O',Hc=DU65m&s@b_]Jc34*a1[;1HV<*o708PrWJeifDgs5EqT?CdV?dAq85!S=B/jO'H?$FcsC&]*0.d.IC,.O5q1n9m>lLjnOq0o+@UrN8NY]62\N4*iaoL03Mq-3+lk13G46dKr=,IU^*2M'2u,3U#!=$s4RcLGu0<k1e96\q0MddA=nu4t1mef;G_/C@)+IXOjU)9#7rrXbd9W89Xcc'@IVfECD"RMj.eGc_nuYRQ6/\dJO^g7Ch:M>;eEqe1]f',1eV9\8u&#qMgY&HcI-'riqVNN"uA@c2WN`Mjq3F/TG_.NNq)]lgr^i)?^_`8_FLm-(H^3BM6O[Eg2aHG0`5H-O-d?Df8XF(^?-<O`bjDM8jjHXu!WTA\=&:@Z@^Ff64V2I=*oVUK=K#o9A@,bo;DQ/UsTfRb^#e=OF/mEG;G>725:9D+lgUkTD^2VbT'LoSQq2bqY8B^Y*?\/gXDDI^gZlo3h:ViNS:c#W4rTU/sHrAGh`^1&2.J]<8Vok@f+#J`e!Wch6UWk8mkFhST.i0St5C11X&08piThMHrS_d/!0n)c$A7:i"2g~>endstream
+endobj
+65 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 786
+>>
+stream
+Gau1-gJ6Kg&;KZF'I.Lg<D?p98B>'bTH\qH`3!"<2\UOS04"%$h/uQjoGsD8)+km-A6H3cR/+e[ptr?))"?Zhq^;\/$))k:K-*@GJ3Vg26?ifL@IKoQY9QPI(`iJMj72Z,1O>N'#$&0)b5f:X,g9]cQTlC:K('hucXl<W:&Xj`qSNN.T[]t+%][*+=`nYS@;IXLR;i,G:b8+QTo$J$?kI`?3Js?Rl:'sl=(hiZ?)#m!gS#KapVQ$j@[-gm4C3sV/MX>42R3L]0%k")mFWV3?]V-&0$6f%-b_p1Eh6c[M\W+k3#_ns__(t*lKnS*`VCM&<2b8*a/`Vq68?/=l.M>B)*&:GKcM.T$!U>H#92,iaEXP'^K:b[JZJ^npW.f#U,s:.]@k$DqKHHV9pEI'0$)[:A!NgM%Pg7n7hb4ZRiqXfRpEZ]]'S"2i4O.<S5M\rdKH_7Q]!&tA4S"G\ng8@WTB9RiD*#ITn&?-dD2*G.10W,>V!p!ruQ<d&oI!ZYff%/=)[9)l%M'/n&0/WZ`Smb4niSP$n!`_fuc@uOV\VbYoDr4OYljsd!2/fK'c%ai.7G5_2.^eDBpqmS8,Iti#JSH6lQCfbnk$'eh2Rdj_o>>c31lG8,-7kKQ$k>KhBI+:+kT7Xsfo`d'F*lQr$uU(D:>UKJjSYU[tlp@(Sr,/gjJ$]q%[=P!h]imIAmLnD0CGifn*W-X'aKF;>0eh@'jUD<)^Zq:ehLDo[2F7E#=$5a;9lLRHOYR_]MC$^BW]DYjMs*09fKlfYeF616J5#^Uj~>endstream
+endobj
+xref
+0 66
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000462 00000 n 
+0000000667 00000 n 
+0000000875 00000 n 
+0000001102 00000 n 
+0000001279 00000 n 
+0000001456 00000 n 
+0000001634 00000 n 
+0000001812 00000 n 
+0000001990 00000 n 
+0000002168 00000 n 
+0000002438 00000 n 
+0000002616 00000 n 
+0000002794 00000 n 
+0000002972 00000 n 
+0000003149 00000 n 
+0000003327 00000 n 
+0000003505 00000 n 
+0000003682 00000 n 
+0000003859 00000 n 
+0000004036 00000 n 
+0000004214 00000 n 
+0000004392 00000 n 
+0000004570 00000 n 
+0000004748 00000 n 
+0000004977 00000 n 
+0000005193 00000 n 
+0000005432 00000 n 
+0000005652 00000 n 
+0000005887 00000 n 
+0000006065 00000 n 
+0000006243 00000 n 
+0000006421 00000 n 
+0000006599 00000 n 
+0000006777 00000 n 
+0000006955 00000 n 
+0000007133 00000 n 
+0000007323 00000 n 
+0000007517 00000 n 
+0000007724 00000 n 
+0000007935 00000 n 
+0000008132 00000 n 
+0000008566 00000 n 
+0000008782 00000 n 
+0000008998 00000 n 
+0000009220 00000 n 
+0000009454 00000 n 
+0000009673 00000 n 
+0000009851 00000 n 
+0000010029 00000 n 
+0000010207 00000 n 
+0000010385 00000 n 
+0000010563 00000 n 
+0000010741 00000 n 
+0000010918 00000 n 
+0000011223 00000 n 
+0000011293 00000 n 
+0000011577 00000 n 
+0000011658 00000 n 
+0000013909 00000 n 
+0000016153 00000 n 
+0000018217 00000 n 
+trailer
+<<
+/ID 
+[<c50f30783a24a3558a391939a640095e><c50f30783a24a3558a391939a640095e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 60 0 R
+/Root 59 0 R
+/Size 66
+>>
+startxref
+19094
+%%EOF

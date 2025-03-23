@@ -2,7 +2,8 @@ import streamlit as st
 import requests
 
 # Django API endpoint
-BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
+# BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
+BACKEND_URL = "http://localhost:8000/"
 
 
 st.set_page_config(page_title="Research Agent", layout="wide")
@@ -69,12 +70,15 @@ if st.button("Send"):
 
 # Download button
 if st.button("Download PDF"):
-    pdf_url = f"{BACKEND_URL}/api/download_pdf/"
+    pdf_url = f"{BACKEND_URL}api/download_pdf/"
     response = requests.get(pdf_url)
 
     if response.status_code == 200:
-        with open("Research_Report.pdf", "wb") as f:
-            f.write(response.content)
-        st.success("Download successful! Check your local directory.")
+        st.download_button(
+        label="Download PDF",
+        data=response.content,  # File content
+        file_name="Research_Report.pdf",
+        mime="application/pdf"
+    )
     else:
         st.error("Error downloading the file.")
