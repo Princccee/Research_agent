@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 
 # Django API endpoint
-# BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
-BACKEND_URL = "http://localhost:8000/"
+BACKEND_URL = "https://ai-research-agent-wn06.onrender.com"
+# BACKEND_URL = "http://localhost:8000/"
 
 
 st.set_page_config(page_title="Research Agent", layout="wide")
@@ -72,7 +72,8 @@ if selected_resource:
             if "huggingface_models" in resources:
                 with st.expander("🤖 Hugging Face Models"):
                     for model in resources["huggingface_models"]:
-                        st.write(f"🔗 {model.get('message', model)}")
+                        st.markdown(f"🔗 [{model.get('name', 'Model')}]({model.get('url', '#')})")
+                        # st.write(f"🔗 {model.get('message', model)}")
 
             if "huggingface_datasets" in resources:
                 with st.expander("📂 Hugging Face Datasets"):
@@ -83,17 +84,21 @@ if selected_resource:
             if "kaggle_datasets" in resources:
                 with st.expander("📊 Kaggle Datasets"):
                     for kaggle in resources["kaggle_datasets"]:
-                        st.markdown(f"🔗 [{kaggle['name']}]({kaggle['url']})")
+                        st.markdown(f"🔗 [{kaggle.get('name', 'Kaggle')}]({kaggle.get('url','#')})")
+                        # st.markdown(f"🔗 [{kaggle['name']}]({kaggle['url']})")
 
             if "github_repositories" in resources:
                 with st.expander("💻 GitHub Repositories"):
                     for repo in resources["github_repositories"]:
-                        st.write(f"🔗 {repo}")
+                        st.markdown(f"🔗 [{repo.get('name', 'Repo')}]({repo.get('url','#')})")
+                        # st.markdown(f"🔗 [{repo}]({repo})")
+                        # st.write(f"🔗 {repo}")
 
             if "research_papers" in resources:
                 with st.expander("📜 Research Papers"):
                     for paper in resources["research_papers"]:
-                        st.markdown(f"📄 [{paper['title']}]({paper['url']})")
+                        st.markdown(f"📄  [{paper.get('title', 'Paper')}]({paper.get('url', '#')})")
+                        # st.markdown(f"📄 [{paper['title']}]({paper['url']})")
 
 # Download PDF Button
 if st.button("Download PDF"):
